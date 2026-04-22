@@ -30,27 +30,22 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %endif
 
 %description
-This package contains files needed to run bytecode executables using
-TEMPLATE library.
+The Stream and Genlex libraries for use with Camlp4 and Camlp5.
 
-%description -l pl.UTF-8
-Pakiet ten zawiera binaria potrzebne do uruchamiania programów
-używających biblioteki TEMPLATE.
+This package contains files needed to run bytecode executables using
+camlp-streams library.
 
 %package devel
-Summary:	TEMPLATE binding for OCaml - development part
-Summary(pl.UTF-8):	Wiązania TEMPLATE dla OCamla - część programistyczna
+Summary:	Stream and Genlex libraries for OCaml - development part
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 %requires_eq ocaml
 
 %description devel
-This package contains files needed to develop OCaml programs using
-TEMPLATE library.
+The Stream and Genlex libraries for use with Camlp4 and Camlp5.
 
-%description devel -l pl.UTF-8
-Pakiet ten zawiera pliki niezbędne do tworzenia programów w OCamlu
-używających biblioteki TEMPLATE.
+This package contains files needed to develop OCaml programs using
+camlp-streams library.
 
 %prep
 %setup -q -n %{module}-%{version}
