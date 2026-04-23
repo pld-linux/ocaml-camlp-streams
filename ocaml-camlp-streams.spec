@@ -11,7 +11,7 @@
 Summary:	Stream and Genlex libraries for OCaml
 Name:		ocaml-%{module}
 Version:	5.0.1
-Release:	1
+Release:	2
 License:	LGPL
 Group:		Libraries
 Source0:	https://github.com/ocaml/camlp-streams/archive/v%{version}/%{module}-%{version}.tar.gz
@@ -84,6 +84,7 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/ocaml/%{module}/*.cmti
 %{_libdir}/ocaml/%{module}/*.mli
 %if %{with ocaml_opt}
+%{_libdir}/ocaml/%{module}/*.a
 %{_libdir}/ocaml/%{module}/*.cmx
 %{_libdir}/ocaml/%{module}/*.cmxa
 %endif
